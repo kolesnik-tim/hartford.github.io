@@ -1,1 +1,42 @@
 .about
+  padding: 50px 0
+  +r(992)
+    padding: 25px 0 0
+  &__row
+    display: flex
+    +r(992)
+      flex-direction: column
+  &__block
+    width: 100%
+  &__img
+    width: 100%
+    height: 400px
+    +r(992)
+      margin-bottom: 40px
+      height: 200px
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  &__text
+    margin-left: 30px
+    +r(992)
+      margin-left: 0
+    h1
+      font-size: 25px
+      text-transform: uppercase
+      color: $blue
+      text-align: center
+      margin-bottom: 20px
+      font-weight: 500
+      +r(767)
+        font-size: 20px
+    p
+      text-align: justify
+      font-size: 18px
+      line-height: 1.3
+      color: $blue
+      +r(767)
+        font-size: 16px
+
+    

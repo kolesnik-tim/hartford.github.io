@@ -3,33 +3,33 @@
   top: 0
   left: 0
   width: 100%
-  padding: 24px 0
-  background: rgba(255, 255, 255, 0.9)
+  padding: 10px 0
+  background: #fff
   box-shadow: 0px 4px 20px rgba(138, 26, 140, 0.05)
   z-index: 10
   +r(767)
-    padding: 13px 0
     position: fixed
+    border-bottom: 2px solid $blue
   .menu-open
     position: relative
-    width: 20px
+    width: 30px
     height: 20px
     display: none
     z-index: 99
     +r(767)
       display: block
     span
-      width: 20px
+      width: 30px
       height: 2px
       margin-top: 9px
-      background: #8A1A8C
+      background: $blue
       display: block
       +tr
       &:before, &:after
         content: ''
-        width: 20px
+        width: 30px
         height: 2px
-        background: #8A1A8C
+        background: $blue
         position: absolute
         left: 0
         +tr
@@ -54,69 +54,23 @@
   &__block
     width: 100%
 
-  &__call
-    +r(767)
-      display: flex
-      align-items: center
-    &__tel
-      font-size: 16px
-      color: #404040
-      margin-bottom: 
-      font-weight: 700
-      display: block
-      margin-bottom: 5px
-      +r(767)
-        display: none
-    &__btn
-      font-size: 14px
-      color: #8A1A8C
-      +r(767)
-        display: none
+
   &__logo
     +center
     img
-      height: 38px
-  &__info
-    display: flex
-    justify-content: flex-end
-    align-items: center
-
-  &__user 
-    margin-right: 35px
-    +r(767)
-      display: none
-  &__calc
-    +r(767)
-      display: none
-  &__balance
-    display: flex
-    flex-direction: column
-    align-items: flex-end
-    margin-left: 35px
-    p
-      font-weight: 500
-      font-size: 14px
-      color: #8A1A8C
-      margin-bottom: 5px
-    span
-      font-size: 16px 
-      color: #404040
-
-
+      height: 65px
+  
 .header-nav
   position: absolute
-  top: 90px
+  top: 85px
   left: 0
   width: 100%
-  background: #8A1A8C
+  background: $blue
   +r(767)
-    top: 65px
-    padding: 4px 0
+    display: none
   ul
     display: flex
     justify-content: center
-    +r(767)
-      display: none
   a
     padding: 10px 50px
     display: block
@@ -126,13 +80,14 @@
     color: #FFFFFF
     position: relative
     margin: 0 2px
+    text-transform: uppercase
     span
       position: relative
       z-index: 2
     &::before
       content: ''
       position: absolute
-      left: -5px
+      left: -6px
       top: 0
       width: 100%
       height: 100%
@@ -143,7 +98,7 @@
       +tr
       z-index: 1
   li.active a, li a:hover
-    color: #8A1A8C
+    color: $blue
     &::before
       opacity: 1
 
@@ -154,53 +109,40 @@
   bottom: 100%
   left: 0
   width: 100%
-  height: calc(100% - 73px)
-  background: rgba(255, 255, 255, 0.8)
-  backdrop-filter: blur(20px)
+  height: calc(100% - 87px)
+  background: #fff
   border-radius: 10px
   overflow: auto
-  padding: 30px 10px 105px
+  padding: 30px 10px
   transition: all 0.7s
   z-index: 9
   &.active
     bottom: 0
-  +rh(550)
-    padding-bottom: 30px
   &__content
     display: flex
     flex-direction: column
-    justify-content: space-between
+    justify-content: center
     align-items: center
     height: 100%
+    +rh(440)
+      height: auto
   h2
     font-weight: 600
     font-size: 20px
     text-align: center
     text-transform: uppercase
-    color: #8A1A8C
+    color: $blue
   ul
-    height: 100%
     display: flex
     flex-direction: column
-    justify-content: space-around
+    justify-content: center
     align-items: center
     padding: 50px 0
     +rh(550)
       padding: 20px 0
     a
       font-weight: 500
-      font-size: 16px
+      font-size: 18px
       color: #404040
-  &__call
-    a
+      padding: 20px 0
       display: block
-      text-align: center
-      &:first-child
-        font-weight: 700
-        font-size: 16px
-        color: #404040
-        margin-bottom: 5px
-      &:last-child
-        font-weight: 400
-        font-size: 14px
-        color: #8A1A8C

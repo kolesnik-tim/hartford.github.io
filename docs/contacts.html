@@ -16,37 +16,48 @@
       <header class="header">
         <div class="container">
           <div class="header__row">
-            <div class="header__block header__call">
-              <div class="menu-open"><span></span></div><a class="header__call__tel" href="tel:+380674831331">+38 067 483 1331</a><a class="header__call__btn" href="#bell" data-popup="#bell">Заказать звонок </a>
-            </div>
-            <div class="header__block header__logo"><img src="img/logo.svg" alt=""></div>
-            <div class="header__block header__info"> <a class="header__user" href="#"> <i class="icon icon-user"></i></a><a class="header__calc" href="#" data-popup="#calculator"> <i class="icon icon-calc"></i></a><a class="header__balance" href="#">
-                <p>Баланс</p><span>0.00</span>
-              </a></div>
+            <div class="menu-open"><span></span></div>
+            <div class="header__block header__logo"><img src="img/logo1.svg" alt=""></div>
           </div>
         </div>
       </header>
+      <nav class="header-nav">
+        <ul>
+          <li class="active"><a href="index.html"><span>Home</span></a></li>
+          <li> <a href="about.html"><span>About</span></a></li>
+          <li><a href="services.html"><span>Services</span></a></li>
+          <li><a href="contacts.html"><span>Contact</span></a></li>
+        </ul>
+      </nav>
       <!--END header-->
       <!--BEGIN menu mobile-->
       <div class="menu">
         <div class="menu__content">
           <h2>Меню</h2>
           <ul>
-            <li><a href="#" data-popup="#calculator">Калькулятор</a></li>
-            <li><a href="#">Выкупленные авто</a></li>
-            <li><a href="#">Документы</a></li>
-            <li><a href="#">Carfax</a></li>
-            <li><a href="#">Выход</a></li>
+            <li><a href="index.html"><span>Home</span></a></li>
+            <li> <a href="about.html"><span>About</span></a></li>
+            <li><a href="services.html"><span>Services</span></a></li>
+            <li><a href="contacts.html"><span>Contact</span></a></li>
           </ul>
-          <div class="menu__call"><a href="tel:+380674831331">+38 067 483 1331</a><a href="#bell" data-popup="#bell">Заказать звонок </a></div>
         </div>
       </div>
       <!--END menu mobile-->
-      <div class="contacts"></div>
+      <div class="container">
+        <div class="contacts">
+          <h1>Contact Us</h1>
+          <form class="form"><label><span>First name </span><input type="text" name="first_name" placeholder="First name"></label><label><span>Last name </span><input type="text" name="last_name" placeholder="Last name"></label><label><span>Email</span><input type="email" name="email" placeholder="email@.com"></label><label><span>Phone number</span><input type="number" name="phone" placeholder="Phone number"></label><label><input type="submit" value="Submit"></label></form>
+        </div>
+      </div>
       <!--BEGIN footer-->
       <footer class="footer">
         <div class="container">
-          <p>©All State Auto.2021 Все права защищены</p>
+          <ul class="footer__nav">
+            <li class="active"><a href="index.html"><span>Home</span></a></li>
+            <li> <a href="about.html"><span>About</span></a></li>
+            <li><a href="services.html"><span>Services</span></a></li>
+            <li><a href="contacts.html"><span>Contact</span></a></li>
+          </ul><a class="footer__mail" href="mailto:snp@hartfordsa.com">snp@hartfordsa.com </a>
         </div>
       </footer>
       <!--END footer-->

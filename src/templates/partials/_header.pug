@@ -2,21 +2,25 @@
 header.header
   .container
     .header__row
-      .header__block.header__call
-        .menu-open
-          span
-        a(href="tel:+380674831331").header__call__tel +38 067 483 1331
-        a(href="#bell" data-popup="#bell").header__call__btn Заказать звонок 
+      .menu-open
+        span
       .header__block.header__logo
-        img(src="img/logo.svg", alt="")
-      .header__block.header__info 
-        a(href="#").header__user 
-          i.icon.icon-user
-        a(href="#" data-popup="#calculator").header__calc 
-          i.icon.icon-calc
-        a(href="#").header__balance
-          p Баланс
-          span 0.00
+        img(src="img/logo1.svg", alt="")
+
+nav.header-nav
+  ul
+    li.active
+      a(href="index.html")
+        span Home
+    li 
+      a(href="about.html")
+        span About
+    li
+      a(href="services.html")
+        span Services
+    li
+      a(href="contacts.html")
+        span Contact
 
 //END header
 
@@ -27,16 +31,15 @@ header.header
     h2 Меню
     ul
       li
-        a(href="#" data-popup="#calculator") Калькулятор
+        a(href="index.html")
+          span Home
+      li 
+        a(href="about.html")
+          span About
       li
-        a(href="#") Выкупленные авто
+        a(href="services.html")
+          span Services
       li
-        a(href="#") Документы
-      li
-        a(href="#") Carfax
-      li
-        a(href="#") Выход
-    .menu__call
-      a(href="tel:+380674831331") +38 067 483 1331
-      a(href="#bell" data-popup="#bell") Заказать звонок  
+        a(href="contacts.html")
+          span Contact
 //END menu mobile

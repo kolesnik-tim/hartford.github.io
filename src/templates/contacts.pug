@@ -3,4 +3,21 @@ title: Contacts
 ---
 extends layouts/_layout
 block content
-  .contacts
+  .container
+    .contacts
+      h1 Contact Us
+      form.form
+        label
+          span First name 
+          input(type="text" name="first_name" placeholder="First name")
+        label
+          span Last name 
+          input(type="text" name="last_name" placeholder="Last name")
+        label
+          span Email
+          input(type="email" name="email" placeholder="email@.com")
+        label
+          span Phone number
+          input(type="number" name="phone" placeholder="Phone number")
+        label
+          input(type="submit" value="Submit")
