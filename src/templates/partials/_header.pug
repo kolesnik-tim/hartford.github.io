@@ -1,0 +1,42 @@
+//BEGIN header
+header.header
+  .container
+    .header__row
+      .header__block.header__call
+        .menu-open
+          span
+        a(href="tel:+380674831331").header__call__tel +38 067 483 1331
+        a(href="#bell" data-popup="#bell").header__call__btn Заказать звонок 
+      .header__block.header__logo
+        img(src="img/logo.svg", alt="")
+      .header__block.header__info 
+        a(href="#").header__user 
+          i.icon.icon-user
+        a(href="#" data-popup="#calculator").header__calc 
+          i.icon.icon-calc
+        a(href="#").header__balance
+          p Баланс
+          span 0.00
+
+//END header
+
+
+//BEGIN menu mobile
+.menu
+  .menu__content
+    h2 Меню
+    ul
+      li
+        a(href="#" data-popup="#calculator") Калькулятор
+      li
+        a(href="#") Выкупленные авто
+      li
+        a(href="#") Документы
+      li
+        a(href="#") Carfax
+      li
+        a(href="#") Выход
+    .menu__call
+      a(href="tel:+380674831331") +38 067 483 1331
+      a(href="#bell" data-popup="#bell") Заказать звонок  
+//END menu mobile
