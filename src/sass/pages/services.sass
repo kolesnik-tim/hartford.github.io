@@ -61,6 +61,7 @@
           
   &__row
     display: flex
+    align-items: center
     +r(992)
       flex-direction: column
   &__block
@@ -68,6 +69,16 @@
   &__img
     width: 100%
     height: 300px
+    position: relative
+    &::after
+      content: ''
+      position: absolute
+      left: 10px
+      top: 10px
+      width: 100%
+      height: 100%
+      background: rgba($blue, 0.3)
+      z-index: -1
     +r(992)
       margin-bottom: 15px
       height: 200px
