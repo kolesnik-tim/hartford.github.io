@@ -3,8 +3,8 @@ title: Contacts
 ---
 extends layouts/_layout
 block content
-  .container
-    .contacts
+  .contacts
+    .container
       h1 Contact Us
       form.form
         label
@@ -18,3 +18,24 @@ block content
           input(type="number" name="phone" placeholder="Phone number")
         label
           input(type="submit" value="Submit")
+  
+
+  .service-home 
+    .container
+      h2 Our advanced services
+      .service-home__row 
+        .service-home__block 
+          img(src="img/secondhand.svg", alt="")
+          strong SECOBDHEND
+          p Our core business is secondhand sale and purchase deals. Our years of experience...
+          a(href="#") Learn more 
+        .service-home__block 
+          img(src="img/recycling.svg", alt="")
+          strong recycling
+          p Our direct and successful relationship with all major demolition yards over the world and the vast...
+          a(href="#") Learn more 
+        .service-home__block 
+          img(src="img/valuations.svg", alt="")
+          strong valuations
+          p We always ready to help our clients in vessel valuations. Our massive experience...
+          a(href="#") Learn more 

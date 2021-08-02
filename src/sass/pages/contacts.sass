@@ -1,4 +1,8 @@
 .contacts
+  position: relative
+  height: 400px
+  width: 100%
+  +center
   &::before
     content: ''
     position: absolute
@@ -27,6 +31,8 @@
     text-align: center
     margin-bottom: 60px
     font-weight: bold
+    +r(767)
+      margin-bottom: 30px
   .form
     display: flex
     justify-content: center
